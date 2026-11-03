@@ -16,5 +16,7 @@ def send_telegram_message(token, chat_id, text):
         },
         timeout=20,
     )
+    if not resp.ok:
+        print(f"Telegram respondió {resp.status_code}: {resp.text}")
     resp.raise_for_status()
     return resp.json()
