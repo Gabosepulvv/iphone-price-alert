@@ -1,8 +1,9 @@
 # Alerta de precios iPhone reacondicionado (Movistar Chile)
 
-Revisa cada 3 horas el catálogo de [Celulares Seminuevos de Movistar](https://catalogo.movistar.cl/tienda/outlet/celulares-reacondicionados)
-buscando iPhone 14, 15 o 16 (normal, Plus, Pro o Pro Max) con 128GB o más, y
-avisa por Telegram cuando:
+Revisa una vez al día el catálogo de [Celulares Seminuevos de Movistar](https://catalogo.movistar.cl/tienda/outlet/celulares-reacondicionados)
+buscando iPhone 14, 15 o 16 (normal, Plus, Pro o Pro Max) con 128GB o más y
+precio máximo de **$700.000 CLP** (cualquier modelo que supere ese tope se
+ignora por completo), y avisa por Telegram cuando:
 
 - **Aparece un modelo nuevo** que antes no estaba en el catálogo.
 - **Baja a su precio mínimo histórico** (nunca estuvo más barato desde que el bot lo sigue).
@@ -74,5 +75,6 @@ cambios reales.
 
 ### Ajustar criterios
 
-- Modelos y GB mínimos: `scraper.py`, variables `MODEL_RE` y `MIN_STORAGE_GB`.
+- Modelos, GB mínimos y precio tope: `scraper.py`, variables `MODEL_RE`,
+  `MIN_STORAGE_GB` y `MAX_PRICE_CLP`.
 - Frecuencia de revisión: `.github/workflows/check-prices.yml`, línea `cron`.

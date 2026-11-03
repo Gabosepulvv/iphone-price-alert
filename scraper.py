@@ -19,6 +19,7 @@ STORAGE_RE = re.compile(r"(\d{2,4})\s*GB", re.IGNORECASE)
 PRICE_RE = re.compile(r"[\d.]+")
 
 MIN_STORAGE_GB = 128
+MAX_PRICE_CLP = 700_000
 
 
 def _parse_price(text):
@@ -102,7 +103,11 @@ def is_desired_iphone(name):
 def get_matching_products():
     html = fetch_html()
     all_products = parse_products(html)
-    return [p for p in all_products if is_desired_iphone(p["name"])]
+    return [
+        p
+        for p in all_products
+        if is_desired_iphone(p["name"]) and p["price"] <= MAX_PRICE_CLP
+    ]
 
 
 if __name__ == "__main__":
