@@ -78,3 +78,4 @@ cambios reales.
 - Modelos, GB mínimos y precio tope: `scraper.py`, variables `MODEL_RE`,
   `MIN_STORAGE_GB` y `MAX_PRICE_CLP`.
 - Frecuencia de revisión: `.github/workflows/check-prices.yml`, línea `cron`.
+
