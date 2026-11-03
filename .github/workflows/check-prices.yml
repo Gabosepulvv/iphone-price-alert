@@ -1,4 +1,4 @@
-name: Check iPhone prices
+name: check-prices
 
 on:
   schedule:
