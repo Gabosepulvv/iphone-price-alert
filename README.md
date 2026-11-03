@@ -62,9 +62,9 @@ En el repo: **Settings → Secrets and variables → Actions → New repository 
 ## 5. Listo
 
 El workflow en `.github/workflows/check-prices.yml` corre automáticamente
-una vez al día (13:00 UTC ≈ 10:00/09:00 hora de Chile). También puedes
-dispararlo manualmente desde la pestaña **Actions → Check iPhone prices →
-Run workflow** para probarlo sin esperar.
+2 veces al día (13:00 y 23:00 UTC ≈ 10:00/20:00 hora de Chile en horario de
+verano). También puedes dispararlo manualmente desde la pestaña
+**Actions → check-prices → Run workflow** para probarlo sin esperar.
 
 ### Primera corrida
 
