@@ -2,12 +2,16 @@
   "https://catalogo.movistar.cl/tienda/apple-iphone-15-pro-128gb-azul-lamina-seminuevo": {
     "name": "Apple iPhone 15 Pro 128GB Azul + Lámina (Seminuevo)",
     "first_seen": "2026-11-03T20:46:26.221531+00:00",
-    "last_seen": "2026-11-03T20:46:26.221531+00:00",
+    "last_seen": "2026-11-03T21:27:48.996436+00:00",
     "min_price": 699990,
     "last_price": 699990,
     "history": [
       {
         "date": "2026-11-03T20:46:26.221531+00:00",
+        "price": 699990
+      },
+      {
+        "date": "2026-11-03T21:27:48.996436+00:00",
         "price": 699990
       }
     ]
