@@ -1,9 +1,12 @@
-# Alerta de precios iPhone reacondicionado (Movistar Chile)
+# Alerta de precios iPhone reacondicionado (Movistar + Entel Chile)
 
-Revisa una vez al día el catálogo de [Celulares Seminuevos de Movistar](https://catalogo.movistar.cl/tienda/outlet/celulares-reacondicionados)
+Revisa 2 veces al día los catálogos de seminuevos de
+[Movistar](https://catalogo.movistar.cl/tienda/outlet/celulares-reacondicionados)
+y [Entel](https://miportal.entel.cl/personas/catalogo/seminuevos)
 buscando iPhone 14, 15 o 16 (normal, Plus, Pro o Pro Max) con 128GB o más y
 precio máximo de **$700.000 CLP** (cualquier modelo que supere ese tope se
-ignora por completo), y avisa por Telegram cuando:
+ignora por completo, en cualquiera de las dos tiendas), y avisa por Telegram
+cuando:
 
 - **Aparece un modelo nuevo** que antes no estaba en el catálogo.
 - **Baja a su precio mínimo histórico** (nunca estuvo más barato desde que el bot lo sigue).
@@ -76,6 +79,8 @@ cambios reales.
 ### Ajustar criterios
 
 - Modelos, GB mínimos y precio tope: `scraper.py`, variables `MODEL_RE`,
-  `MIN_STORAGE_GB` y `MAX_PRICE_CLP`.
+  `MIN_STORAGE_GB` y `MAX_PRICE_CLP` (aplican por igual a Movistar y Entel).
+- Tiendas monitoreadas: `scraper.py`, diccionario `SOURCES` al final del
+  archivo — agregar una nueva tienda es agregar su función de scraping ahí.
 - Frecuencia de revisión: `.github/workflows/check-prices.yml`, línea `cron`.
 

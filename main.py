@@ -74,9 +74,9 @@ REASON_LABELS = {
 
 
 def build_message(alerts):
-    lines = ["<b>📱 Alerta iPhone reacondicionado - Movistar</b>", ""]
+    lines = ["<b>📱 Alerta iPhone reacondicionado</b>", ""]
     for product, reason in alerts:
-        lines.append(f"<b>{product['name']}</b>")
+        lines.append(f"<b>[{product.get('source', '?')}] {product['name']}</b>")
         lines.append(f"Motivo: {REASON_LABELS[reason]}")
         price_line = f"Precio: {format_clp(product['price'])}"
         if product.get("original_price"):
