@@ -32,5 +32,31 @@
         "price": 659990
       }
     ]
+  },
+  "https://catalogo.movistar.cl/tienda/apple-iphone-15-128gb-negro-lamina-seminuevo": {
+    "name": "Apple iPhone 15 128GB Negro + Lámina (Seminuevo)",
+    "first_seen": "2026-11-05T20:25:07.241065+00:00",
+    "last_seen": "2026-11-05T20:25:07.241065+00:00",
+    "min_price": 459990,
+    "last_price": 459990,
+    "history": [
+      {
+        "date": "2026-11-05T20:25:07.241065+00:00",
+        "price": 459990
+      }
+    ]
+  },
+  "https://catalogo.movistar.cl/tienda/apple-iphone-14-128gb-medianoche-lamina-seminuevo": {
+    "name": "Apple iPhone 14 128GB Medianoche + Lámina (Seminuevo)",
+    "first_seen": "2026-11-05T20:25:07.241065+00:00",
+    "last_seen": "2026-11-05T20:25:07.241065+00:00",
+    "min_price": 379990,
+    "last_price": 379990,
+    "history": [
+      {
+        "date": "2026-11-05T20:25:07.241065+00:00",
+        "price": 379990
+      }
+    ]
   }
 }
