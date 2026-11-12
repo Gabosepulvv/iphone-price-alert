@@ -62,7 +62,7 @@
   "https://miportal.entel.cl/personas/celulares/iphone-16-128gb-seminuevo/prod2490046": {
     "name": "iPhone 16 128GB Seminuevo",
     "first_seen": "2026-11-09T22:47:19.373314+00:00",
-    "last_seen": "2026-11-11T19:55:50.081805+00:00",
+    "last_seen": "2026-11-12T03:29:29.897844+00:00",
     "min_price": 599990,
     "last_price": 599990,
     "history": [
@@ -84,6 +84,10 @@
       },
       {
         "date": "2026-11-11T19:55:50.081805+00:00",
+        "price": 599990
+      },
+      {
+        "date": "2026-11-12T03:29:29.897844+00:00",
         "price": 599990
       }
     ]
