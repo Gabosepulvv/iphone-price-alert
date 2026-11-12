@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historial de precios · iPhone reacondicionado</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 16px; }
+  .card { border: 1px solid #8884; border-radius: 12px; padding: 16px; margin-bottom: 20px; }
+  h2 { font-size: 18px; margin: 0 0 8px; }
+  h2 a { color: inherit; text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .price { margin: 4px 0; }
+  .meta { color: #888; font-size: 13px; margin: 0 0 12px; }
+  header { margin-bottom: 24px; }
+  footer { color: #888; font-size: 12px; text-align: center; margin-top: 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>📱 Historial de precios · iPhone reacondicionado (Movistar)</h1>
+  <p>Última actualización: 2026-11-12 18:52 UTC</p>
+</header>
+<main>
+
+        <div class="card">
+          <h2><a href="https://miportal.entel.cl/personas/celulares/iphone-16-128gb-seminuevo/prod2490046" target="_blank" rel="noopener">iPhone 16 128GB Seminuevo</a></h2>
+          <p class="price">Precio actual: <strong>$599.990</strong>
+             &middot; Mínimo histórico: $599.990</p>
+          <p class="meta">Visto por primera vez: 2026-11-09
+             &middot; Última vez: 2026-11-12</p>
+          <canvas id="chart-0" height="80"></canvas>
+        </div>
+
+        <div class="card">
+          <h2><a href="https://catalogo.movistar.cl/tienda/apple-iphone-15-128gb-negro-lamina-seminuevo" target="_blank" rel="noopener">Apple iPhone 15 128GB Negro + Lámina (Seminuevo)</a></h2>
+          <p class="price">Precio actual: <strong>$459.990</strong>
+             &middot; Mínimo histórico: $459.990</p>
+          <p class="meta">Visto por primera vez: 2026-11-05
+             &middot; Última vez: 2026-11-05</p>
+          <canvas id="chart-1" height="80"></canvas>
+        </div>
+
+        <div class="card">
+          <h2><a href="https://catalogo.movistar.cl/tienda/apple-iphone-14-128gb-medianoche-lamina-seminuevo" target="_blank" rel="noopener">Apple iPhone 14 128GB Medianoche + Lámina (Seminuevo)</a></h2>
+          <p class="price">Precio actual: <strong>$379.990</strong>
+             &middot; Mínimo histórico: $379.990</p>
+          <p class="meta">Visto por primera vez: 2026-11-05
+             &middot; Última vez: 2026-11-05</p>
+          <canvas id="chart-2" height="80"></canvas>
+        </div>
+
+        <div class="card">
+          <h2><a href="https://catalogo.movistar.cl/tienda/apple-iphone-15-pro-128gb-azul-lamina-seminuevo" target="_blank" rel="noopener">Apple iPhone 15 Pro 128GB Azul + Lámina (Seminuevo)</a></h2>
+          <p class="price">Precio actual: <strong>$699.990</strong>
+             &middot; Mínimo histórico: $699.990</p>
+          <p class="meta">Visto por primera vez: 2026-11-03
+             &middot; Última vez: 2026-11-04</p>
+          <canvas id="chart-3" height="80"></canvas>
+        </div>
+
+        <div class="card">
+          <h2><a href="https://catalogo.movistar.cl/tienda/apple-iphone-16-256gb-azul-seminuevo-mas-lamina" target="_blank" rel="noopener">Apple iPhone 16 256GB Azul (Seminuevo) + Lámina</a></h2>
+          <p class="price">Precio actual: <strong>$659.990</strong>
+             &middot; Mínimo histórico: $659.990</p>
+          <p class="meta">Visto por primera vez: 2026-11-04
+             &middot; Última vez: 2026-11-04</p>
+          <canvas id="chart-4" height="80"></canvas>
+        </div>
+</main>
+<footer>Generado automáticamente desde history.json en cada corrida del bot.</footer>
+<script>
+const chartData = {"chart-0": {"labels": ["2026-11-09", "2026-11-10", "2026-11-10", "2026-11-11", "2026-11-11", "2026-11-12"], "prices": [659990, 659990, 599990, 599990, 599990, 599990]}, "chart-1": {"labels": ["2026-11-05"], "prices": [459990]}, "chart-2": {"labels": ["2026-11-05"], "prices": [379990]}, "chart-3": {"labels": ["2026-11-03", "2026-11-03", "2026-11-04"], "prices": [699990, 699990, 699990]}, "chart-4": {"labels": ["2026-11-04"], "prices": [659990]}};
+for (const [id, data] of Object.entries(chartData)) {
+  new Chart(document.getElementById(id), {
+    type: 'line',
+    data: {
+      labels: data.labels,
+      datasets: [{
+        label: 'Precio (CLP)',
+        data: data.prices,
+        borderColor: '#2563eb',
+        backgroundColor: 'rgba(37,99,235,0.1)',
+        tension: 0.2,
+        fill: true,
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: { y: { ticks: { callback: (v) => '$' + v.toLocaleString('es-CL') } } }
+    }
+  });
+}
+</script>
+</body>
+</html>

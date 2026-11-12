@@ -27,10 +27,13 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
 
+      - name: Generate price history report
+        run: python report.py
+
       - name: Commit updated history
         run: |
           git config user.name "iphone-price-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add history.json
+          git add history.json docs/index.html
           git diff --quiet --cached || git commit -m "Actualiza historial de precios"
           git push

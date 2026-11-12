@@ -67,6 +67,18 @@ El workflow en `.github/workflows/check-prices.yml` corre automáticamente
 verano). También puedes dispararlo manualmente desde la pestaña
 **Actions → check-prices → Run workflow** para probarlo sin esperar.
 
+## 6. Reporte visual (GitHub Pages)
+
+Cada corrida también genera `docs/index.html` con el historial de precios
+y un gráfico por producto, publicado automáticamente en:
+
+**https://gabosepulvv.github.io/iphone-price-alert/**
+
+El repo es público para que esta página funcione gratis (GitHub Pages en
+repos privados requiere un plan de pago). Solo se expone el código y los
+precios públicos de Movistar — el token de Telegram y el chat_id siguen
+siendo secrets privados, nunca quedan en el repo.
+
 ### Primera corrida
 
 En la primera ejecución, **todo** lo que haya en el catálogo que cumpla los
