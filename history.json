@@ -44,7 +44,7 @@
   "https://catalogo.movistar.cl/tienda/apple-iphone-15-128gb-negro-lamina-seminuevo": {
     "name": "Apple iPhone 15 128GB Negro + Lámina (Seminuevo)",
     "first_seen": "2026-11-05T20:25:07.241065+00:00",
-    "last_seen": "2026-11-17T04:52:39.584186+00:00",
+    "last_seen": "2026-11-17T21:26:55.233716+00:00",
     "min_price": 459990,
     "last_price": 459990,
     "history": [
@@ -90,6 +90,10 @@
       },
       {
         "date": "2026-11-17T04:52:39.584186+00:00",
+        "price": 459990
+      },
+      {
+        "date": "2026-11-17T21:26:55.233716+00:00",
         "price": 459990
       }
     ]
@@ -251,6 +255,32 @@
       {
         "date": "2026-11-15T19:11:27.858464+00:00",
         "price": 599990
+      }
+    ]
+  },
+  "https://catalogo.movistar.cl/tienda/apple-iphone-16-plus-128gb-negro-mas-lamina-seminuevo": {
+    "name": "Apple iPhone 16 Plus 128GB Negro + Lámina (Seminuevo)",
+    "first_seen": "2026-11-17T21:26:55.233716+00:00",
+    "last_seen": "2026-11-17T21:26:55.233716+00:00",
+    "min_price": 699990,
+    "last_price": 699990,
+    "history": [
+      {
+        "date": "2026-11-17T21:26:55.233716+00:00",
+        "price": 699990
+      }
+    ]
+  },
+  "https://catalogo.movistar.cl/tienda/apple-iphone-14-128gb-blanco-estelar-lamina-seminuevo": {
+    "name": "Apple iPhone 14 128GB Blanco Estelar + Lámina (Seminuevo)",
+    "first_seen": "2026-11-17T21:26:55.233716+00:00",
+    "last_seen": "2026-11-17T21:26:55.233716+00:00",
+    "min_price": 379990,
+    "last_price": 379990,
+    "history": [
+      {
+        "date": "2026-11-17T21:26:55.233716+00:00",
+        "price": 379990
       }
     ]
   }
