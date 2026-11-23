@@ -365,7 +365,7 @@
   "https://catalogo.movistar.cl/tienda/apple-iphone-15-128gb-rosado-lamina-seminuevo": {
     "name": "Apple iPhone 15 128GB Rosado + Lámina (Seminuevo)",
     "first_seen": "2026-11-18T03:57:05.846153+00:00",
-    "last_seen": "2026-11-22T20:03:17.498908+00:00",
+    "last_seen": "2026-11-23T03:22:19.415106+00:00",
     "min_price": 459990,
     "last_price": 459990,
     "history": [
@@ -403,6 +403,14 @@
       },
       {
         "date": "2026-11-22T20:03:17.498908+00:00",
+        "price": 459990
+      },
+      {
+        "date": "2026-11-23T03:22:19.415106+00:00",
+        "price": 459990
+      },
+      {
+        "date": "2026-11-23T03:22:19.415106+00:00",
         "price": 459990
       }
     ]
