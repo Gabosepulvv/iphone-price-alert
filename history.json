@@ -171,7 +171,7 @@
   "https://catalogo.movistar.cl/tienda/apple-iphone-16-128-gb-rosado-mas-lamina-seminuevo": {
     "name": "Apple iPhone 16 128GB Rosado + Lámina (Seminuevo)",
     "first_seen": "2026-11-12T18:41:03.561085+00:00",
-    "last_seen": "2026-11-25T22:03:44.744366+00:00",
+    "last_seen": "2026-11-26T04:36:26.934360+00:00",
     "min_price": 499990,
     "last_price": 499990,
     "history": [
@@ -201,6 +201,14 @@
       },
       {
         "date": "2026-11-25T22:03:44.744366+00:00",
+        "price": 499990
+      },
+      {
+        "date": "2026-11-26T04:36:26.934360+00:00",
+        "price": 499990
+      },
+      {
+        "date": "2026-11-26T04:36:26.934360+00:00",
         "price": 499990
       }
     ]
