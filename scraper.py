@@ -11,8 +11,8 @@ HEADERS = {
     "Accept-Language": "es-CL,es;q=0.9",
 }
 
-# Modelos de interés: iPhone 14, 15 o 16 (incluye Pro, Pro Max, Plus), excluyendo 16e.
-MODEL_RE = re.compile(r"iPhone\s+(14|15|16)(e)?\b", re.IGNORECASE)
+# Modelos de interés: iPhone 14 o 15 (incluye Pro, Pro Max, Plus).
+MODEL_RE = re.compile(r"iPhone\s+(14|15)\b", re.IGNORECASE)
 STORAGE_RE = re.compile(r"(\d{2,4})\s*GB", re.IGNORECASE)
 PRICE_RE = re.compile(r"[\d.]+")
 
@@ -23,8 +23,6 @@ MAX_PRICE_CLP = 700_000
 def is_desired_iphone(name):
     match = MODEL_RE.search(name)
     if not match:
-        return False
-    if match.group(2):  # evita "16e"
         return False
 
     storage_match = STORAGE_RE.search(name)
